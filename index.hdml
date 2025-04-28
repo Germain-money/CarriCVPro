@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Générateur de CV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Il ne doit y avoir qu'un seul <body> -->
+<div id="cvForm">
+<h2>Remplissez votre CV</h2>
+<label for="name">Nom :</label>
+<input type="text" id="name" placeholder="Entrez votre nom">
+
+<label for="job">Poste :</label>
+<input type="text" id="job" placeholder="Ex : Développeur Web">
+
+<label for="email">Email :</label>
+<input type="email" id="email" placeholder="Ex : email@example.com">
+
+<label for="phone">Téléphone :</label>
+<input type="tel" id="phone" placeholder="Ex : +123 456 789">
+
+<label for="skills">Compétences :</label>
+<textarea id="skills" placeholder="Ex : HTML, CSS, JavaScript"></textarea>
+
+<label for="experience">Expérience :</label>
+<textarea id="experience" placeholder="Décrivez votre expérience..."></textarea>
+
+<button onclick="generateCV()">Générer CV</button>
+</div>
+<div id="cvOutput">
+<div class="left">
+<h2>Informations personnelles</h2>
+<ul>
+<li><strong>Nom:</strong> John Doe</li>
+<li><strong>Poste:</strong> Développeur Front-End</li>
+<li><strong>Email:</strong> john.doe@example.com</li>
+<li><strong>Téléphone:</strong> +123 456 789</li>
+</ul>
+
+<h2>Compétences</h2>
+<ul>
+<li>HTML, CSS, JavaScript</li>
+<li>React, Node.js</li>
+<li>Git, GitHub</li>
+</ul>
+
+<h2>Langues</h2>
+<ul>
+<li>Français (natif)</li>
+<li>Anglais (courant)</li>
+</ul>
+</div>
+
+<div class="right">
+<h2>Expériences</h2>
+<ul>
+<li><strong>Développeur Web Junior</strong> - XYZ Company, 2023-2024</li>
+<li><strong>Stagiaire Développeur Front-End</strong> - ABC Ltd., 2022-2023</li>
+</ul>
+
+<h2>Formation</h2>
+<ul>
+<li><strong>Master en Informatique</strong> - Université de Paris, 2022</li>
+<li><strong>Bachelor en Informatique</strong> - Université de Lyon, 2020</li>
+</ul>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body> <!-- Il ne doit y avoir qu'un seul </body> -->
+</html>
+  
